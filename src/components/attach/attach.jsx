@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Attach from 'arui-feather/attach';
 import { createCn } from 'bem-react-classname';
+import IconCamera from 'arui-feather/icon/action/camera';
+import IconLock from 'arui-feather/icon/action/lock';
+import IconBankAlfa from 'arui-feather/icon/brand/bank-alfa';
 
 import './attach.scss';
 
@@ -11,8 +14,8 @@ export default class AttachClass extends Component {
         super(props);
       
         this.state = {
-            value: false,
-            value2: false
+            value: '',
+            value2: ''
         };
     }
     
@@ -30,14 +33,24 @@ export default class AttachClass extends Component {
             <div className={ this.cn() }>
                 <div>Attach</div>
                 <div>
+                <div>
                     {
                         ['s', 'm'].map(size => (
                             <div className={ this.cn('body') } key={ size }>
                                 <div className='column'>
-                                    <Attach size={ size } noFileText='' />
+                                    <Attach 
+                                        size={ size } 
+                                        noFileText=''
+                                        buttonProps={ { type: 'reset'} }
+                                    />
                                 </div>
                                 <div className='column'>
-                                    <Attach size={ size } noFileText='' disabled={ true } />
+                                    <Attach
+                                        size={ size }
+                                        noFileText=''
+                                        disabled={ true }
+                                        icon={ <IconLock /> }
+                                    />
                                 </div>
                             </div>
                         ))
@@ -47,11 +60,12 @@ export default class AttachClass extends Component {
                     <div className={ this.cn('body') }>
                         <Attach
                             size='s'
-                            noFileText=''
+                            noFileText='Нет файла'
                             buttonContent={ this.state.value ? 'Выберите другой файл' : 'Выберите файл' }
                             onChange={ this.handleChange }
-                            buttonProps={ { pseudo: true } }
+                            buttonProps={ { pseudo: true, view: 'extra' } }
                             value={ this.state.value }
+                            icon={ <IconCamera /> }
                         />
                     </div>
                 </div>
@@ -64,10 +78,13 @@ export default class AttachClass extends Component {
                             size='s'
                             onChange={ this.handleChangeValue2 }
                             value={ this.state.value2 }
+                            buttonProps={ { view: 'action' } }
+                            icon={ <IconBankAlfa /> }
+                            onFocus={ this.handleFocus }
                         />
                     </div>
                 </div>
-
+                </div>
             </div>
         );
     }
