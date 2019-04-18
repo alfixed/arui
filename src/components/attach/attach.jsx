@@ -14,17 +14,17 @@ export default class AttachClass extends Component {
         super(props);
       
         this.state = {
-            value: '',
-            value2: ''
+            valueAttachFirst: '',
+            valueAttachSecond: ''
         };
     }
     
-    handleChange = (value) => {
-        this.setState({ value });
+    handleChangeAttachFirst = (value) => {
+        this.setState({ valueAttachFirst: value });
     }
 
-    handleChangeValue2 = (value2) => {
-        this.setState({ value2 });
+    handleChangeAttachSecond = (value) => {
+        this.setState({ valueAttachSecond: value });
     }
 
     render() {
@@ -61,10 +61,10 @@ export default class AttachClass extends Component {
                         <Attach
                             size='s'
                             noFileText='Нет файла'
-                            buttonContent={ this.state.value ? 'Выберите другой файл' : 'Выберите файл' }
-                            onChange={ this.handleChange }
+                            buttonContent={ this.state.valueAttachFirst ? 'Выберите другой файл' : 'Выберите файл' }
+                            onChange={ this.handleChangeAttachFirst }
                             buttonProps={ { pseudo: true, view: 'extra' } }
-                            value={ this.state.value }
+                            value={ this.state.valueAttachFirst }
                             icon={ <IconCamera /> }
                         />
                     </div>
@@ -76,11 +76,10 @@ export default class AttachClass extends Component {
                             noFileText='.pdf, .xls'
                             buttonContent='Выберите файл'
                             size='s'
-                            onChange={ this.handleChangeValue2 }
-                            value={ this.state.value2 }
+                            onChange={ this.handleChangeAttachSecond }
+                            value={ this.state.valueAttachSecond }
                             buttonProps={ { view: 'action' } }
                             icon={ <IconBankAlfa /> }
-                            onFocus={ this.handleFocus }
                         />
                     </div>
                 </div>
