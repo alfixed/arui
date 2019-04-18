@@ -1,0 +1,20 @@
+@import '~arui-feather/vars.css';
+
+.template {
+    background-color: var(--color-background-alfa-on-white);
+    color: var(--color-content-minor-alfa-on-white);
+    width: 100%;
+    
+    &__header {
+        display: block;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__column {
+        padding: var(--gap-s);
+    }
+}
