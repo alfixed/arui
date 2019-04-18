@@ -30,59 +30,62 @@ export default class AttachClass extends Component {
     render() {
 
         return (
-            <div className={ this.cn() }>
+            <div>
                 <div>Attach</div>
-                <div>
-                <div>
-                    {
-                        ['s', 'm'].map(size => (
-                            <div className={ this.cn('body') } key={ size }>
-                                <div className='column'>
-                                    <Attach 
-                                        size={ size } 
-                                        noFileText=''
-                                        buttonProps={ { type: 'reset'} }
-                                    />
+                <div className={ this.cn() }>
+                    <div className={ this.cn('header') }>
+                        {
+                            ['s', 'm'].map(size => (
+                                <div className={ this.cn('body') } key={ size }>
+                                    <div className={ this.cn('column') }>
+                                        <Attach 
+                                            size={ size } 
+                                            noFileText=''
+                                            buttonProps={ { type: 'reset'} }
+                                        />
+                                    </div>
+                                    <div className={ this.cn('column') }>
+                                        <Attach
+                                            size={ size }
+                                            noFileText=''
+                                            disabled={ true }
+                                            icon={ <IconLock /> }
+                                        />
+                                    </div>
                                 </div>
-                                <div className='column'>
-                                    <Attach
-                                        size={ size }
-                                        noFileText=''
-                                        disabled={ true }
-                                        icon={ <IconLock /> }
-                                    />
-                                </div>
+                            ))
+                        }
+                    </div>
+
+                    <div className={ this.cn('header') }>
+                        <div className={ this.cn('body') }>
+                            <div className={ this.cn('column') }>
+                                <Attach
+                                    size='s'
+                                    noFileText='Нет файла'
+                                    buttonContent={ this.state.valueAttachFirst ? 'Выберите другой файл' : 'Выберите файл' }
+                                    onChange={ this.handleChangeAttachFirst }
+                                    buttonProps={ { pseudo: true, view: 'extra' } }
+                                    value={ this.state.valueAttachFirst }
+                                    icon={ <IconCamera /> }
+                                />
                             </div>
-                        ))
-                    }
-                </div>
-                <div>
-                    <div className={ this.cn('body') }>
-                        <Attach
-                            size='s'
-                            noFileText='Нет файла'
-                            buttonContent={ this.state.valueAttachFirst ? 'Выберите другой файл' : 'Выберите файл' }
-                            onChange={ this.handleChangeAttachFirst }
-                            buttonProps={ { pseudo: true, view: 'extra' } }
-                            value={ this.state.valueAttachFirst }
-                            icon={ <IconCamera /> }
-                        />
+                        </div>
+                        <div className={ this.cn('body') }>
+                            <div className={ this.cn('column') }>
+                                <Attach
+                                    accept='.pdf, .xls'
+                                    noFileText='.pdf, .xls'
+                                    buttonContent='Выберите файл'
+                                    size='s'
+                                    onChange={ this.handleChangeAttachSecond }
+                                    value={ this.state.valueAttachSecond }
+                                    buttonProps={ { view: 'action' } }
+                                    icon={ <IconBankAlfa /> }
+                                />
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div className={ this.cn('body') }>
-                        <Attach
-                            accept='.pdf, .xls'
-                            noFileText='.pdf, .xls'
-                            buttonContent='Выберите файл'
-                            size='s'
-                            onChange={ this.handleChangeAttachSecond }
-                            value={ this.state.valueAttachSecond }
-                            buttonProps={ { view: 'action' } }
-                            icon={ <IconBankAlfa /> }
-                        />
-                    </div>
-                </div>
                 </div>
             </div>
         );

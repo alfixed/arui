@@ -34,44 +34,46 @@ export default class AmountClass extends PureComponent {
         };
 
         return (
-            <div className={ this.cn() }>
+            <div>
                 <div>Amount</div>
-                <div className={ this.cn('body') }>
-                    <div>
-                        {
-                            ['s', 'm', 'l', 'xl'].map(size => (
-                                <div key={ size }>
-                                    <Amount
-                                        size={ size }
-                                        amount={ AMOUNT }
-                                    />
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div>
-                        {
-                            ['s', 'm', 'l', 'xl'].map(size => (
-                                <div key={ size }>
-                                    <Amount
-                                        size={ size }
-                                        amount={ AMOUNT_RUR }
-                                    />
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div>
-                        {
-                            ['s', 'm', 'l', 'xl'].map(size => (
-                                <div key={ size }>
-                                    <Amount
-                                        size={ size }
-                                        amount={ AMOUNT_USD }
-                                    />
-                                </div>
-                            ))
-                        }
+                <div className={ this.cn() }>
+                    <div className={ this.cn('body') }>
+                        <div>
+                            {
+                                ['s', 'm', 'l', 'xl'].map(size => (
+                                    <div key={ size }>
+                                        <Amount
+                                            size={ size }
+                                            amount={ AMOUNT }
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                        <div>
+                            {
+                                ['s', 'm', 'l', 'xl'].map(size => (
+                                    <div key={ size }>
+                                        <Amount
+                                            size={ size }
+                                            amount={ AMOUNT_RUR }
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                        <div>
+                            {
+                                ['s', 'm', 'l', 'xl'].map(size => (
+                                    <div key={ size }>
+                                        <Amount
+                                            size={ size }
+                                            amount={ AMOUNT_USD }
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import AmountClass from './components/amount'
-import AttachClass from './components/attach'
+import AmountClass from './components/amount';
+import AttachClass from './components/attach';
+import ButtonClass from './components/button';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,6 +22,10 @@ class App extends Component {
           <br />
           <div>
             <AttachClass />
+          </div>
+          <br />
+          <div>
+            <ButtonClass />
           </div>
         </header>
       </div>
