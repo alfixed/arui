@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import AmountClass from './components/amount';
-import AttachClass from './components/attach';
-import ButtonClass from './components/button';
+import Amount from './components/amount';
+import Attach from './components/attach';
+import Button from './components/button';
+import CalendarInput from './components/calendarInput';
 import logo from './logo.svg';
 import './App.css';
 
@@ -17,15 +18,19 @@ class App extends Component {
             </p>
           </div>
           <div>
-            <AmountClass />
+            <Amount />
           </div>
           <br />
           <div>
-            <AttachClass />
+            <Attach />
           </div>
           <br />
           <div>
-            <ButtonClass />
+            <Button />
+          </div>
+          <br />
+          <div>
+            <CalendarInput />
           </div>
         </header>
       </div>
