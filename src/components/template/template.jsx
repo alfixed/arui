@@ -3,7 +3,7 @@ import { createCn } from 'bem-react-classname';
 
 import './template.scss';
 
-export default class ButtonClass extends PureComponent {
+export default class TemplateClass extends PureComponent {
     cn = createCn('template');
 
     render() {
