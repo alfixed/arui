@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Amount from './components/amount';
 import Attach from './components/attach';
 import Button from './components/button';
+import Calendar from './components/calendar';
 import CalendarInput from './components/calendarInput';
 import logo from './logo.svg';
 import './App.css';
@@ -31,6 +32,10 @@ class App extends Component {
           <br />
           <div>
             <CalendarInput />
+          </div>
+          <br />
+          <div>
+            <Calendar />
           </div>
         </header>
       </div>
