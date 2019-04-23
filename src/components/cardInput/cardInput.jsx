@@ -20,7 +20,11 @@ export default class CardInputClass extends PureComponent {
                                 {
                                     sizes.map(size => (
                                         <div className='row' key={ size }>
-                                            <CardInput size={ size } placeholder='Введите номер карты' />
+                                            <CardInput
+                                                size={ size }
+                                                placeholder='Введите номер карты'
+                                                hint='Подсказка'    
+                                            />
                                         </div>
                                     ))
                                 }
