@@ -14,8 +14,8 @@ export default class AttachClass extends Component {
         super(props);
       
         this.state = {
-            valueAttachFirst: '',
-            valueAttachSecond: ''
+            valueAttachFirst: [''],
+            valueAttachSecond: ['']
         };
     }
     
