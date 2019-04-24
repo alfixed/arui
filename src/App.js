@@ -8,6 +8,7 @@ import CardInput from './components/cardInput';
 import CheckBoxGroup from './components/checkBoxGroup';
 import CheckBox from './components/checkBox';
 import Collapse from './components/collapse';
+import Dropdown from './components/dropdown';
 import logo from './logo.svg';
 import './App.css';
 
@@ -52,6 +53,9 @@ class App extends Component {
           </div>
           <div>
             <Collapse />
+          </div>
+          <div>
+            <Dropdown />
           </div>
         </header>
       </div>
