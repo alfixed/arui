@@ -7,6 +7,7 @@ import CalendarInput from './components/calendarInput';
 import CardInput from './components/cardInput';
 import CheckBoxGroup from './components/checkBoxGroup';
 import CheckBox from './components/checkBox';
+import Collapse from './components/collapse';
 import logo from './logo.svg';
 import './App.css';
 
@@ -48,6 +49,9 @@ class App extends Component {
           </div>
           <div>
             <CheckBox />
+          </div>
+          <div>
+            <Collapse />
           </div>
         </header>
       </div>
