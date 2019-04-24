@@ -6,6 +6,7 @@ import Calendar from './components/calendar';
 import CalendarInput from './components/calendarInput';
 import CardInput from './components/cardInput';
 import CheckBoxGroup from './components/checkBoxGroup';
+import CheckBox from './components/checkBox';
 import logo from './logo.svg';
 import './App.css';
 
@@ -44,6 +45,9 @@ class App extends Component {
           </div>
           <div>
             <CheckBoxGroup />
+          </div>
+          <div>
+            <CheckBox />
           </div>
         </header>
       </div>
