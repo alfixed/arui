@@ -9,6 +9,7 @@ import CheckBoxGroup from './components/checkBoxGroup';
 import CheckBox from './components/checkBox';
 import Collapse from './components/collapse';
 import Dropdown from './components/dropdown';
+import EmailInput from './components/emailInput';
 import logo from './logo.svg';
 import './App.css';
 
@@ -56,6 +57,9 @@ class App extends Component {
           </div>
           <div>
             <Dropdown />
+          </div>
+          <div>
+            <EmailInput />
           </div>
         </header>
       </div>
