@@ -11,6 +11,7 @@ import Collapse from './components/collapse';
 import Dropdown from './components/dropdown';
 import EmailInput from './components/emailInput';
 import FlagIcon from './components/flagIcon';
+import FormField from './components/formField';
 import logo from './logo.svg';
 import './App.css';
 
@@ -28,19 +29,15 @@ class App extends Component {
           <div>
             <Amount />
           </div>
-          <br />
           <div>
             <Attach />
           </div>
-          <br />
           <div>
             <Button />
           </div>
-          <br />
           <div>
             <CalendarInput />
           </div>
-          <br />
           <div>
             <Calendar />
           </div>
@@ -64,6 +61,9 @@ class App extends Component {
           </div>
           <div>
             <FlagIcon />
+          </div>
+          <div>
+            <FormField />
           </div>
         </header>
       </div>
