@@ -12,6 +12,7 @@ import Dropdown from './components/dropdown';
 import EmailInput from './components/emailInput';
 import FlagIcon from './components/flagIcon';
 import FormField from './components/formField';
+import Form from './components/form';
 import logo from './logo.svg';
 import './App.css';
 
@@ -26,45 +27,48 @@ class App extends Component {
               Edit <code>src/App.js</code> and save to reload.
             </p>
           </div>
-          <div>
-            <Amount />
-          </div>
-          <div>
-            <Attach />
-          </div>
-          <div>
-            <Button />
-          </div>
-          <div>
-            <CalendarInput />
-          </div>
-          <div>
-            <Calendar />
-          </div>
-          <div>
-            <CardInput />
-          </div>
-          <div>
-            <CheckBoxGroup />
-          </div>
-          <div>
-            <CheckBox />
-          </div>
-          <div>
-            <Collapse />
-          </div>
-          <div>
-            <Dropdown />
-          </div>
-          <div>
-            <EmailInput />
-          </div>
-          <div>
-            <FlagIcon />
-          </div>
-          <div>
-            <FormField />
-          </div>
+            <div>
+              <Amount />
+            </div>
+            <div>
+              <Attach />
+            </div>
+            <div>
+              <Button />
+            </div>
+            <div>
+              <CalendarInput />
+            </div>
+            <div>
+              <Calendar />
+            </div>
+            <div>
+              <CardInput />
+            </div>
+            <div>
+              <CheckBoxGroup />
+            </div>
+            <div>
+              <CheckBox />
+            </div>
+            <div>
+              <Collapse />
+            </div>
+            <div>
+              <Dropdown />
+            </div>
+            <div>
+              <EmailInput />
+            </div>
+            <div>
+              <FlagIcon />
+            </div>
+            <div>
+              <FormField />
+            </div>
+            <div>
+              <Form />
+            </div>
         </header>
       </div>
     );
