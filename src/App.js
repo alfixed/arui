@@ -13,6 +13,7 @@ import EmailInput from './components/emailInput';
 import FlagIcon from './components/flagIcon';
 import FormField from './components/formField';
 import Form from './components/form';
+import GridCol from './components/gridCol';
 import logo from './logo.svg';
 import './App.css';
 
@@ -68,6 +69,9 @@ class App extends Component {
             </div>
             <div>
               <Form />
+            </div>
+            <div>
+              <GridCol />
             </div>
         </header>
       </div>
