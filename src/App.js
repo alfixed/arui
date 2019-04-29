@@ -14,6 +14,7 @@ import FlagIcon from './components/flagIcon';
 import FormField from './components/formField';
 import Form from './components/form';
 import GridCol from './components/gridCol';
+import GridRow from './components/gridRow';
 import logo from './logo.svg';
 import './App.css';
 
@@ -72,6 +73,9 @@ class App extends Component {
             </div>
             <div>
               <GridCol />
+            </div>
+            <div>
+              <GridRow />
             </div>
         </header>
       </div>

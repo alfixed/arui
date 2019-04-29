@@ -1,24 +1,26 @@
 @import '~arui-feather/vars.css';
 
-.gridCol {
+.gridRow {
     background-color: var(--color-background-alfa-on-white);
     color: var(--color-content-minor-alfa-on-white);
     width: 100%;
-    padding-bottom: 10px;
     
     &__header {
-        flex-wrap: inherit;
+        display: block;
     }
 
     &__body {
         height: 30px;
-        color: #fff;
-        background: #f04539;
-        text-align: center;
-        margin-top: 10px;
+        background: #ff5c5c;
+        margin-bottom: 10;
+        margin: 7px;
     }
 
-    &__column12 {
-        margin-top: 0;
+    &__column {
+        background: #f04539;
+    }
+
+    &__row {
+        margin-bottom: 0;
     }
 }
